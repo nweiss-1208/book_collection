@@ -1,7 +1,9 @@
 <div id="<%= dom_id book %>">
   <p>
-    <strong>Title:</strong>
-    <%= book.title %>
+    <strong>"<%= book.title %>"</strong>
+    <% if book.author.present? %>
+      by <%= book.author %>
+    <% end %>
   </p>
 
 </div>

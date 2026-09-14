@@ -4,7 +4,10 @@
 
 <h1>Book Details</h1>
 
-<%= render @book %>
+<p><strong>Title:</strong> <%= @book.title %></p>
+<p><strong>Author:</strong> <%= @book.author %></p>
+<p><strong>Price:</strong> <%= number_to_currency(@book.price) if @book.price.present? %></p>
+<p><strong>Published Date:</strong> <%= @book.published_date %></p>
 
 <div>
   <%= link_to "Update", edit_book_path(@book) %> |
