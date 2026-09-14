@@ -1,3 +1,6 @@
 class Book < ApplicationRecord
-    validates :title, presence: true
+  has_many :user_books, dependent: :destroy
+  has_many :users, through: :user_books
+
+  validates :title, presence: true
 end

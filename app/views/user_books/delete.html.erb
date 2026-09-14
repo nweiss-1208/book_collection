@@ -1,0 +1,14 @@
+<h1>Delete User Book</h1>
+
+<p>
+  Are you sure you want to remove
+  <strong><%= @user_book.book.title %></strong>
+  from
+  <strong><%= @user_book.user.username %></strong>?
+</p>
+
+<%= button_to "Delete", @user_book, method: :delete %>
+
+<p>
+  <%= link_to "Home", user_books_path %>
+</p>
