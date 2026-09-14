@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @user %>
+
+<div>
+  <%= link_to "Update", edit_user_path(@user) %> |
+  <%= link_to "Delete", delete_user_path(@user) %> |
+  <%= link_to "Back to Users", users_path %>
+</div>

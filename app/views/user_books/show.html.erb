@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @user_book %>
+
+<div>
+  <%= link_to "Update", edit_user_book_path(@user_book) %> |
+  <%= link_to "Delete", delete_user_book_path(@user_book) %> |
+  <%= link_to "Home", user_books_path %>
+</div>
