@@ -1,0 +1,16 @@
+<h1>Delete User</h1>
+
+<p>
+  Are you sure you want to delete
+  <strong><%= @user.username %></strong>?
+</p>
+
+<%= button_to "Delete", @user, method: :delete %>
+
+<p>
+  <%= link_to "Back to Users", users_path %>
+</p>
+
+<p>
+  <%= link_to "Home", root_path %>
+</p>
