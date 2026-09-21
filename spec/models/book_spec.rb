@@ -27,4 +27,8 @@ RSpec.describe Book, type: :model do
 
     expect(book.published_date).to eq(date)
   end
+
+  it "has seeded books in the test database" do
+    expect(Book.exists?(title: "The Hobbit")).to be true
+  end
 end
