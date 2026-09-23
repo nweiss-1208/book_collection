@@ -28,6 +28,12 @@ gem "solid_cache"
 gem "solid_queue"
 gem "solid_cable"
 
+# OAuth Priming
+gem 'devise', '~> 4.9'
+gem "omniauth", "~> 2.1"
+gem "omniauth-rails_csrf_protection", "~> 1.0"
+gem "omniauth-google-oauth2", "~> 1.1"
+
 gem "concurrent-ruby", "1.3.4"
 
 # Reduces boot times through caching; required in config/boot.rb

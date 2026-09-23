@@ -2,6 +2,14 @@
 
 <h1>User Books</h1>
 
+<% if admin_signed_in? %>
+  <p>You're logged in! Welcome!</p>
+
+  <%= button_to "Sign Out",
+      destroy_admin_session_path,
+      method: :get %>
+<% end %>
+
 <table>
   <thead>
     <tr>
