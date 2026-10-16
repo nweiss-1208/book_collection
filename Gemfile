@@ -28,7 +28,7 @@ gem "solid_cache"
 gem "solid_queue"
 gem "solid_cable"
 
-gem "concurrent-ruby", "1.3.4"
+gem "concurrent-ruby", "1.3.8"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
